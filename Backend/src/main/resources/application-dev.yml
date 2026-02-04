@@ -1,0 +1,33 @@
+# Development profile - Cache and Security disabled
+spring:
+
+
+  # Disable security auto-configuration
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+      - org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
+      - org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration
+
+  # Disable Redis cache
+  cache:
+    type: none
+
+  # Comment out Redis configuration
+  # redis:
+  #   host: ${REDIS_HOST:localhost}
+  #   port: ${REDIS_PORT:6379}
+
+# Disable security
+security:
+  enabled: false
+
+# Disable cache
+cache:
+  enabled: false
+
+logging:
+  level:
+    com.healthcare.fhir: DEBUG
+    org.springframework.security: OFF
+    org.springframework.cache: OFF
