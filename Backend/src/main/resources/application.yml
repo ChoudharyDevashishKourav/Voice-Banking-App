@@ -12,14 +12,14 @@ spring:
           max-tokens: 12000
 
   application:
-    name: fhir-terminology-service
+    name: Voice_Banking
   sql:
     init:
       mode: always
   datasource:
-    url: jdbc:postgresql://localhost:5432/fhir_terminology
-    username: ${DB_USERNAME:fhir_user}
-    password: ${DB_PASSWORD:fhir_password}
+    url: jdbc:postgresql://localhost:5432/voice_banking
+    username: ${DB_USERNAME:voice}
+    password: ${DB_PASSWORD:twaplu123}
     driver-class-name: org.postgresql.Driver
   cache:
     type: none

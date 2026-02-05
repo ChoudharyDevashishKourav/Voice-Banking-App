@@ -9,10 +9,10 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.healthcare</groupId>
-	<artifactId>fhir-terminology-service</artifactId>
+	<artifactId>Voice_banking</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>fhir-terminology-service</name>
-	<description>FHIR Terminology Microservice with NAMASTE and ICD-11 integration</description>
+	<name>Voice_banking-service</name>
+	<description>Automate boring task and get excited</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
