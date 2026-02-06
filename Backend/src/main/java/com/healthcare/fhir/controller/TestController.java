@@ -12,6 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/test")
+@CrossOrigin(origins = "http://localhost:3000")
 public class TestController {
 
 
@@ -33,6 +34,11 @@ public class TestController {
     @GetMapping("/intent")
     public IntentService.IntentResult testIntent(@RequestParam String query) {
         return intentService.detectIntent(query);
+    }
+
+    @GetMapping("/temp")
+    public String temp(){
+        return "yoo due this is epic!!!!";
     }
 
     @PostMapping("/query")

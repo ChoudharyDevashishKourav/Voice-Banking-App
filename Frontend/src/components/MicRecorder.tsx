@@ -139,18 +139,14 @@ const MicRecorder: React.FC<Props> = ({ uploadUrl, fieldName = 'file', extraFiel
         )}
       </button>
 
-      <div className="text-sm text-slate-600">
+      <div className="text-sm text-gray-300">
         {isRecording ? 'Recording...' : 'Tap to record'}
       </div>
-      <div className="text-sm text-slate-600">
+      <div className="text-sm text-gray-300">
         {isTranscribing ? 'Transcribing...' : ''}
       </div>
         
-        {!!TTS && (
-        <h2 className="mt-3 italic text-lg font-medium text-slate-700 tracking-tight">
-        *{TTS}*
-        </h2>
-        )}
+        
         
 
 
